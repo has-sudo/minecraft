@@ -9,14 +9,14 @@
   <title>我的世界</title>
   <style>
     body {
-      color: #b9d4eb;
+      color: #ffffff;
       font-family: sans-serif;
       overflow: hidden;
       margin: 0;
       padding: 0;
     }
     :root, body.is-fullscreen {
-      background-color: #b9d4eb;
+      background-color: #000000;
     }
     [hidden] {
       display: none !important;
@@ -46,7 +46,7 @@
       cursor: default;
       user-select: none;
       -webkit-user-select: none;
-      background-color: #b9d4eb;
+      background-color: #000000;
     }
     #launch {
       background-color: rgba(0, 0, 0, 0.7);
@@ -111,10 +111,10 @@
       border-radius: 4px;
     }
     .control-button-highlight:hover {
-      background: #b9d4eb26;
+      background: #00000026;
     }
     .control-button-highlight.active {
-      background: #b9d4eb59;
+      background: #00000059;
     }
     .fullscreen-button {
       background: white;
@@ -142,7 +142,7 @@
     }
     
   </style>
-  <meta name="theme-color" content="#b9d4eb">
+  <meta name="theme-color" content="#000000">
   
 </head>
 <body>
@@ -221,7 +221,7 @@
       };
 
       scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
-      scaffolding.setAccentColor("#b9d4eb");
+      scaffolding.setAccentColor("#000000");
 
       try {
         scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@【开源】我的世界S V1.sb3"));
@@ -250,7 +250,7 @@
           }
         });
         const otherControlsExist = false;
-        const fillColor = otherControlsExist ? '#575E75' : '#b9d4eb';
+        const fillColor = otherControlsExist ? '#575E75' : '#ffffff';
         const updateFullScreen = () => {
           isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
           document.body.classList.toggle('is-fullscreen', isFullScreen);
